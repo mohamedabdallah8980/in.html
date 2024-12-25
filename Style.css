@@ -1,0 +1,1046 @@
+/* إعادة تعيين بعض الأنماط الافتراضية */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* اختيار خط جيد وتعيين لون النص العام */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* تنسيق شريط التنقل */
+.navbar {
+  background-color: #0056b3; /* أزرق داكن */
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.navbar .Link-img img {
+  height: 60px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 25px;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ffcc00; /* ذهبي عند التمرير */
+}
+.navbar ul li a:after{
+  color: black;
+}
+
+/* تنسيق Content Header */
+#Content-Header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.header-section {
+  display: flex;
+  width: 100%;
+}
+
+.header-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.header-text small {
+  color: #ffcc00;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header-text small img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.header-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+.header-text h1 span {
+  color: #ffcc00;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555555;
+}
+
+.header-buttons .btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #28a745; /* أخضر */
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* رمادي */
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: translateY(-3px);
+}
+
+.Img-Header img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيقات عامة للأقسام */
+section {
+  padding: 60px 20px;
+}
+
+.Container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.Title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Title h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.Title img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.Title p {
+  color: #777777;
+  font-size: 1rem;
+}
+
+/* تنسيق الصفوف */
+.Row, .Row-Help, .Row-Services, .Row-Doctors, .Row-Blog, .Row-content, .Row-News {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* تنسيق الأعمدة */
+.COL, .help-item, .service-item, .doctor-item, .Col-Blog, .price-item {
+  flex: 1;
+  min-width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.COL:hover, .help-item:hover, .service-item:hover, .doctor-item:hover, .Col-Blog:hover, .price-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.COL h2, .help-item h3, .service-item h4, .doctor-item h3, .Col-Blog h3 {
+  color: #0056b3;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: 0.5px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.List ul {
+  list-style: none;
+}
+
+.List ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.List ul li i {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+/* تنسيق قسم Info */
+#Info {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.info-item {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.info-item i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.info-item p {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #ffff;
+}
+
+.info-item small {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* تنسيق قسم Help */
+#Help .help-item i {
+  font-size: 2rem;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+#Help .help-item h3 {
+  margin-bottom: 10px;
+}
+
+/* تنسيق قسم Call */
+#Call {
+  background-color: #28a745;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#Call h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+#Call p {
+  margin-bottom: 25px;
+}
+
+.Buttons-2 .btn {
+  margin: 10px 5px;
+}
+
+/* تنسيق قسم Services */
+#Services .service-item i {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+#Services .service-item h4 {
+  margin-bottom: 10px;
+}
+
+#Services .service-item small {
+  color: #777777;
+}
+
+/* تنسيق قسم Price-List */
+.Price-List .price-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.Price-List .price-item i {
+  font-size: 2rem;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.Price-List .price-item h3 {
+  margin-bottom: 5px;
+  color: #0056b3;
+}
+
+.Price-List .price-item span {
+  font-size: 1.5rem;
+  color: #28a745;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.Card-Price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Card-Price ul {
+  list-style: none;
+}
+
+.Card-Price ul li {
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.Price-Mark-1 li, .Price-Mark-2 li, .Price-Mark-3 li {
+  color: #28a745;
+}
+
+/* تنسيق قسم Brand */
+.Brand .Row-Brand {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Brand .Row-Brand img {
+  width: 120px;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.Brand .Row-Brand img:hover {
+  transform: scale(1.1);
+}
+/*  تنسيق الممرضين  */
+
+#NURSES {
+  padding: 80px 0;
+  background: linear-gradient(to right, #f1f6ff, #ffffff);
+}
+
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.Title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.Title h1 {
+  color: #1a4f8b;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.Title img {
+  width: 60px;
+  margin: 15px 0;
+}
+
+.Title p {
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.Row-Nurses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.nurse-item {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.nurse-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.nurse-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 4px solid #1a4f8b;
+}
+
+.nurse-info {
+  padding: 25px 20px;
+  text-align: center;
+  background: white;
+}
+
+.nurse-info h3 {
+  color: #1a4f8b;
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.nurse-info .position {
+  color: #3498db;
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.nurse-details {
+  padding: 0 25px 25px;
+  background: white;
+}
+
+.nurse-details p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.nurse-details p:before {
+  content: "•";
+  color: #3498db;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.experience-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #1a4f8b;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .Title h1 {
+      font-size: 32px;
+  }
+
+  .Row-Nurses {
+      grid-template-columns: 1fr;
+  }
+
+  .nurse-item {
+      max-width: 400px;
+      margin: 0 auto;
+  }
+}
+
+
+/* تنسيق قسم Doctors */
+#Doctors .doctor-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#Doctors .doctor-item h3 {
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+#Doctors .doctor-item p {
+  margin-bottom: 15px;
+  color: #777777;
+}
+
+/* تنسيق قسم Blog-Section */
+#Blog-Section .Col-Blog {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Blog-Section .Col-Blog:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+#Blog-Section .Col-Blog img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Blog-Content {
+  padding: 15px;
+}
+
+.Blog-Content p {
+  color: #777777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.Blog-Content h3 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+/* تنسيق قسم Content (نموذج الحجز) */
+#Content .Row-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+#Content form {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#Content form div {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+#Content form input, #Content form select, #Content form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#Content form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+#Content form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#Content form button:hover {
+  background-color: #004494;
+}
+
+#Content img {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* تنسيق قسم News-Letter */
+.News-Letter {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+.News-Letter .Row-News {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter-info {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.newsletter-info h3 {
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.newsletter-info p {
+  color: #777777;
+}
+
+.News-Letter form {
+  display: flex;
+  flex: 1;
+  min-width: 250px;
+}
+
+.News-Letter input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.News-Letter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.News-Letter button:hover {
+  background-color: #218838;
+}
+
+/* تنسيق الفوتر */
+footer {
+  background-color: black;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.Row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-about, .footer-links, .footer-hours, .footer-newsletter {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px 0;
+}
+
+.footer-about h2, .footer-links h2, .footer-hours h2, .footer-newsletter h2 {
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.footer-about p {
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.social-links a {
+  color: #ffffff;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffcc00;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-links ul li i {
+  margin-right: 10px;
+  color: #ffcc00;
+}
+
+.footer-hours p {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.footer-hours ul {
+  list-style: none;
+}
+
+.footer-hours ul li {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-newsletter form {
+  display: flex;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffcc00;
+  color: #343a40;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+  background-color: #e6b800;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: #777777;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#EQUIPMENT {
+  padding: 80px 0;
+  background: linear-gradient(to right, #f4f4f4, #f4f4f4);
+}
+
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.Title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.Title h1 {
+  color: #1a4f8b;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.Title img {
+  width: 60px;
+  margin: 15px 0;
+}
+
+.Title p {
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.Row-Equipment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.equipment-item {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.equipment-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.equipment-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 4px solid #1a4f8b;
+}
+
+.equipment-info {
+  padding: 25px 20px;
+  text-align: center;
+  background: white;
+}
+
+.equipment-info h3 {
+  color: #1a4f8b;
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.equipment-info .type {
+  color: #3498db;
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.equipment-details {
+  padding: 0 25px 25px;
+  background: white;
+}
+
+.equipment-details p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.equipment-details p:before {
+  content: "•";
+  color: #3498db;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.technology-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #1a4f8b;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .Title h1 {
+    font-size: 32px;
+  }
+
+  .Row-Equipment {
+    grid-template-columns: 1fr;
+  }
+
+  .equipment-item {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  /* max-width: 800px; */
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+  .hospital-name {
+  font-size: 20px;
+  color: #00796b;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+p {
+  color: #555;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.whatsapp-button:hover {
+  background-color: #128c7e;
+}
+h2 {
+  color: #00796b;
+  margin: 30px 0 20px;
+}
+.ratings {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.rating {
+  background-color: #f44336; /* Default Red */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+.rating:hover {
+  transform: scale(1.1);
+}
+.consultations {
+  background-color: #ffeb3b; /* Yellow */
+}
+.medical-team {
+  background-color: #4caf50; /* Green */
+}
+.patients {
+  background-color: #2196f3; /* Blue */
+}
+.label {
+  font-size: 16px;
+  margin-top: 5px;
+}
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #00796b;
+  color: white;
+}
+
+

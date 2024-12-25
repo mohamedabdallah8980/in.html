@@ -1,0 +1,64 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#team-container {
+    display: grid; /* استخدام grid */
+    grid-template-columns: repeat(2, 5fr); /* 5 أعمدة */
+    gap: 50px; /* المسافة بين العناصر */
+    padding: 20px;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+.team-member {
+    display: flex;
+    flex-direction:column; /* ترتيب العناصر عموديًا */
+    align-items:center; /* توسيط العناصر */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 300px; /* حجم الصورة */
+    height: 300px; /* حجم الصورة */
+    object-fit:fill;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: rotate(5deg);
+}
+
+.team-member-content {
+    text-align: center; /* توسيط النص */
+}
+
+.team-member h3 {
+    margin: 5px 0;
+    font-size: 18px; /* حجم الخط */
+    font-weight: bold;
+    color: #0057b3;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
